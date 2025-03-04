@@ -67,9 +67,9 @@ export const App: React.FC = () => {
             >
               <div className="dropdown-content">
                 {people.length > 0 ? (
-                  people.map(person => (
+                  people.map((person, index) => (
                     <div
-                      key={person.name}
+                      key={index}
                       className="dropdown-item"
                       data-cy="suggestion-item"
                       onMouseDown={() => handleSelect(person)}
